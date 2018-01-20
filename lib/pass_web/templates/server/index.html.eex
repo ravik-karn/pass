@@ -3,9 +3,8 @@
 <table class="table">
   <thead>
     <tr>
+      <th>User Name</th>
       <th>PDA Type</th>
-      <th>PDA Certifier</th>
-      <th>PDA Subject</th>
       <th>PDA Data</th>
       <th></th>
     </tr>
@@ -13,9 +12,8 @@
   <tbody>
 <%= for pda <- @pdas do %>
     <tr>
-      <td><%= pda.pda_type %></td>
-      <td><%= pda.pda_certifier %></td>
       <td><%= pda.pda_subject %></td>
+      <td><%= pda.pda_type %></td>
       <td><%= pda.pda_data %></td>
 
       <td class="text-right">
@@ -25,5 +23,3 @@
 <% end %>
   </tbody>
 </table>
-
-<span><%= link "New Pda", to: pda_path(@conn, :new) %></span>
