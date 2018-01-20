@@ -1,9 +1,9 @@
 <div class="jumbotron">
-  <h2><%= @welcome_text %></h2>
+ 
   <h2><%= gettext "Welcome to %{name}!", name: "PASS : Public Artifact Service System" %></h2>
 </div>
 
 <div class="container">
- <a class="btn btn-success" href="/pdas/new">Create a new Digital Artifact</a>
- <a class="btn btn-info" href="/pdas">List All Digital Artifacts</a>
+<%= link("Create New Digital Artifact", to: "/pdas/new", class: "btn btn-success") %>
+<%= link("List All Digital Artifacts", to: "/pdas", class: "btn btn-info") %>
 </div>

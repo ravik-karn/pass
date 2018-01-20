@@ -1,15 +1,26 @@
-<h2>Show Pda</h2>
+<h2>Show PDA</h2>
 
 <ul>
 
+
   <li>
-    <strong>Pda:</strong>
-    <%= @pda.pda_id %>
+    <strong>PDA Type:</strong>
+    <%= @pda.pda_type %>
   </li>
 
   <li>
-    <strong>Pda type:</strong>
-    <%= @pda.pda_type %>
+    <strong>PDA Subject:</strong>
+    <%= @pda.pda_subject %>
+  </li>
+
+  <li>
+    <strong>PDA Certifier:</strong>
+    <%= @pda.pda_certifier %>
+  </li>
+
+  <li>
+    <strong>PDA Data:</strong>
+    <%= @pda.pda_data %>
   </li>
 
 </ul>
