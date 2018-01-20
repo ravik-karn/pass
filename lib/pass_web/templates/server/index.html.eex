@@ -19,9 +19,7 @@
       <td><%= pda.pda_data %></td>
 
       <td class="text-right">
-        <span><%= link "Show", to: pda_path(@conn, :show, pda), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Edit", to: pda_path(@conn, :edit, pda), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: pda_path(@conn, :delete, pda), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+        <span><%= link "Approve", to: pda_path(@conn, :show, pda), class: "btn btn-success" %></span>
       </td>
     </tr>
 <% end %>
