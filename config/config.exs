@@ -5,6 +5,12 @@
 # is restricted to this project.
 use Mix.Config
 
+
+# General drab coonection
+config :phoenix, :template_engines,
+  drab: Drab.Live.Engine
+
+  
 # General application configuration
 config :pass,
   ecto_repos: [Pass.Repo]

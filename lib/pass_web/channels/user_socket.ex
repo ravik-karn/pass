@@ -1,5 +1,6 @@
 defmodule PassWeb.UserSocket do
   use Phoenix.Socket
+  use Drab.Socket
 
   ## Channels
   # channel "room:*", PassWeb.RoomChannel

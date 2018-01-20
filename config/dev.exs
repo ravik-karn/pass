@@ -37,7 +37,7 @@ config :pass, PassWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/pass_web/views/.*(ex)$},
-      ~r{lib/pass_web/templates/.*(eex)$}
+      ~r{lib/pass_web/templates/.*(eex|drab)$}
     ]
   ]
 
