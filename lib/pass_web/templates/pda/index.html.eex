@@ -3,8 +3,8 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Pda</th>
-      <th>Pda type</th>
+      <th>PDA</th>
+      <th>PDA Type</th>
 
       <th></th>
     </tr>
@@ -12,8 +12,10 @@
   <tbody>
 <%= for pda <- @pdas do %>
     <tr>
-      <td><%= pda.pda_id %></td>
       <td><%= pda.pda_type %></td>
+      <td><%= pda.pda_certifier %></td>
+      <td><%= pda.pda_subject %></td>
+      <td><%= pda.pda_data %></td>
 
       <td class="text-right">
         <span><%= link "Show", to: pda_path(@conn, :show, pda), class: "btn btn-default btn-xs" %></span>
