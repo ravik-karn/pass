@@ -1,0 +1,28 @@
+<h2>Listing Pdas</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Pda</th>
+      <th>Pda type</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for pda <- @pdas do %>
+    <tr>
+      <td><%= pda.pda_id %></td>
+      <td><%= pda.pda_type %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: pda_path(@conn, :show, pda), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: pda_path(@conn, :edit, pda), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: pda_path(@conn, :delete, pda), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Pda", to: pda_path(@conn, :new) %></span>

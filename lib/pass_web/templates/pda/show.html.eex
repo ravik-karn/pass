@@ -1,0 +1,18 @@
+<h2>Show Pda</h2>
+
+<ul>
+
+  <li>
+    <strong>Pda:</strong>
+    <%= @pda.pda_id %>
+  </li>
+
+  <li>
+    <strong>Pda type:</strong>
+    <%= @pda.pda_type %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: pda_path(@conn, :edit, @pda) %></span>
+<span><%= link "Back", to: pda_path(@conn, :index) %></span>

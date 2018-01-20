@@ -1,0 +1,5 @@
+<h2>Edit Pda</h2>
+
+<%= render "form.html", Map.put(assigns, :action, pda_path(@conn, :update, @pda)) %>
+
+<span><%= link "Back", to: pda_path(@conn, :index) %></span>
